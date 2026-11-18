@@ -18,8 +18,14 @@
         <![endif]-->
         
         <h1>Speed of Luca</h1>
-        <p>Luca is currently moving at a speed of</p>
+        <p>Luca is currently moving at a speed of {{speed}}</p>
 
-        
+        <script>
+            var t=setInterval(test,4000);
+
+            function test(){
+                location.reload()
+            }
+        </script>
     </body>
 </html>
