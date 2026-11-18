@@ -7,8 +7,9 @@ app = Flask(__name__)
 @app.route('/', methods=["GET","POST"])
 def home():
     if request.method == "POST":
-        with open(mode="w", file="data.txt") as file:
-            file.write(str(request.data))
+        print(request.data)
+        # with open(mode="w", file="data.txt") as file:
+        #     file.write(str(request.data))
 
 
     return render_template('index.html')
